@@ -11,7 +11,7 @@ __Vectors
 	EXPORT Reset_Handler
 Reset_Handler
 	LDR R0,=SRC			;points to the LSB of the 1st 128 bit number
-	LDR R1,=SRC+(4*4)	;points to the LSB of the 2nd 128 bit number
+	LDR R1,=SRC+(4*4)		;points to the LSB of the 2nd 128 bit number
 	LDR R2,=DST			;points to the address of DST
 	MOV R3,#3			;counter
 	LDR R4,[R0],#4
